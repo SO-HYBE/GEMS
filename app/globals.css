@@ -68,6 +68,11 @@
   }
 }
 
+body {
+	margin:0;
+	overflow-x:hidden;
+}
+
 .parallax-container {
   position: relative;
   overflow: visible;
@@ -87,27 +92,37 @@
 .illustration-container{
   visibility: hidden;
   transform: translateX(500px);
-  transition: transform ease-in;
+  transition: transform ease-out;
 }
 
 .logo{
   visibility: hidden;
   transform: translateY(-200px);
-  transition: transform ease-in;
+  transition: transform ease-out;
 }
 
 .button-hero{
   visibility: hidden;
-  transition: ease-in;
+  transition: ease-out;
 }
 
 .chevron{
   visibility: hidden;
-  transition: ease-in;
+  transition: ease-out;
 }
 
 .main-text{
   visibility: hidden;
   transform: translateY(200px);
-  transition: transform ease-in;
+  transition: transform ease-out;
+}
+
+.sub-text{
+  visibility: hidden;
+  transform: translateY(200px);
+  transition: transform ease-out;
+}
+
+.headline-text{
+  transition: ease-out;
 }
