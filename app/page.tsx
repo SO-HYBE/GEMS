@@ -10,7 +10,7 @@ import { useRef } from "react";
 import useIsomorphicLayoutEffect from "use-isomorphic-layout-effect";
 import SplitType from "split-type";
 import woman from "../public/woman.png";
-import flowers from "../public/flowers.png";
+import flowers from "../public/flowers.webp";
 import bgCircle from "../public/bg-circle.png";
 import WrapUp from "../app/components/WrapUp";
 import Footer from "../app/components/Footer";
@@ -277,11 +277,59 @@ export default function Home() {
 
       });
     
-      }, elementsRef);
+      //--------------------------------------------------------------------------- INFO CONTENT PARAGRAPH ON SCROLL REVEAL ANIMATION -------------------------
+
+      //--------------------------------------------------------------------------- INFO CONTENT BG COLOR CHANGE ANIMATION ------------------------------------
+
+      const bgTl = gsap.timeline();
+
+      bgTl.to(".intro-section",{
+        scrollTrigger: {
+          trigger: ".intro-section",
+          start: "-20% 20%",
+          end: "top 20%",
+          scrub: true,
+          once: true
+        },
+        background: "#d4edda"
+      })
+      bgTl.to(".first-section",{
+        scrollTrigger: {
+          trigger: ".first-section",
+          start: "-20% 20%",
+          end: "top 20%",
+          scrub: true,
+          once: true
+        },
+        background: "#e0c6f5"
+      })
+      bgTl.to(".second-section",{
+        scrollTrigger: {
+          trigger: ".second-section",
+          start: "-20% 20%",
+          end: "top 20%",
+          scrub: true,
+          once: true
+        },
+        background: "#d4edda"
+      })
+      bgTl.to(".third-section",{
+        scrollTrigger: {
+          trigger: ".third-section",
+          start: "-20% 20%",
+          end: "top 20%",
+          scrub: true,
+          once: true
+        },
+        background: "#e0c6f5"
+      })
+
+      //--------------------------------------------------------------------------- INFO CONTENT BG COLOR CHANGE ANIMATION ------------------------------------
       
-
-
-
+    }, elementsRef);
+      
+      
+      
 
       return () => ctx.revert();
     }
@@ -356,7 +404,7 @@ export default function Home() {
 
       <div className="content-container">
         <div className="contentWrapper">
-          <section className="w-full py-12 md:py-24 lg:py-32 bg-[#d4edda] intro-section">
+          <section className="w-full py-12 md:py-24 lg:py-32 bg-white intro-section">
             <div className="px-4 md:px-6">
               <h2 className="headline-text text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-[#4a235a]">
                 Your Headline Here
@@ -406,7 +454,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="w-full py-12 md:py-24 lg:py-32 bg-[#e0c6f5]">
+          <section className="w-full py-12 md:py-24 lg:py-32 bg-[#d4edda] first-section">
             <div className="px-4 md:px-6">
               <h2
                 id="headL2"
@@ -461,7 +509,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="py-16 bg-[#d4edda]">
+          <section className="py-16 bg-[#e0c6f5] second-section">
             <div className="mx-auto px-4">
               <h2 id="headL3" className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-[#4a235a] headline-text">
                 The Fascinating World of Bioluminescence
@@ -542,7 +590,8 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="py-16 bg-[#e0c6f5]">
+
+          <section className="py-16 bg-[#d4edda] third-section">
             <div className="mx-auto px-4">
               <h2 id="headL4" className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-[#276749] headline-text">
                 The Marvels of Deep Sea Exploration
