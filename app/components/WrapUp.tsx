@@ -232,7 +232,7 @@ export default function WrapUp() {
           />
         </div>
     
-        <div className="grid gap-12 md:grid-cols-2 items-center">
+        <div className="grid gap-12 md:grid-cols-2 items-center pb-[10vh]">
           <Image
             id="serv-card-7"
             priority
