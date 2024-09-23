@@ -35,7 +35,7 @@ export default function WrapUp() {
             scrollTrigger: {
               trigger: "#serv-card-1",
               start: "-35% 50%",
-              end: "60% 30%",
+              end: "50% 40%",
               scrub: true
             }
           }
@@ -52,7 +52,7 @@ export default function WrapUp() {
             scrollTrigger: {
               trigger: "#serv-card-2",
               start: "-35% 50%",
-              end: "60% 30%",
+              end: "50% 40%",
               scrub: true
             }
           }
@@ -69,7 +69,7 @@ export default function WrapUp() {
             scrollTrigger: {
               trigger: "#serv-card-3",
               start: "-35% 50%",
-              end: "60% 30%",
+              end: "50% 40%",
               scrub: true
             }
           }
@@ -86,7 +86,7 @@ export default function WrapUp() {
             scrollTrigger: {
               trigger: "#serv-card-4",
               start: "-35% 50%",
-              end: "60% 30%",
+              end: "50% 40%",
               scrub: true
             }
           }
@@ -103,7 +103,7 @@ export default function WrapUp() {
             scrollTrigger: {
               trigger: "#serv-card-5",
               start: "-35% 50%",
-              end: "60% 30%",
+              end: "50% 40%",
               scrub: true
             }
           }
@@ -120,7 +120,7 @@ export default function WrapUp() {
             scrollTrigger: {
               trigger: "#serv-card-6",
               start: "-35% 50%",
-              end: "60% 30%",
+              end: "50% 40%",
               scrub: true
             }
           }
@@ -137,7 +137,7 @@ export default function WrapUp() {
             scrollTrigger: {
               trigger: "#serv-card-7",
               start: "-35% 50%",
-              end: "60% 30%",
+              end: "50% 40%",
               scrub: true
             }
           }
@@ -154,7 +154,7 @@ export default function WrapUp() {
             scrollTrigger: {
               trigger: "#serv-card-8",
               start: "-20% 60%",
-              end: "60% 30%",
+              end: "50% 40%",
               scrub: true
             }
           }
