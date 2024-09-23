@@ -185,7 +185,7 @@ export default function Home() {
       //--------------------------------------------------------------------------- INFO CONTENT PARAGRAPH ON SCROLL REVEAL ANIMATION -------------------------
       const revealText = document.querySelectorAll(".reveal-text");
 
-      revealText.forEach((char,i) => {
+      revealText.forEach((char) => {
 
         const infoContentText = new SplitType((char as HTMLElement), {types: "chars,words"});
 
@@ -499,10 +499,10 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6 text-[#276749]">
                   <p className="reveal-text">
-                  The intersection of gender equality and climate change significantly impacts women's health, particularly in low and lower-middle-income countries. Climate change exacerbates existing health risks, such as increased maternal and child health issues. Research indicates that rising temperatures can lead to higher rates of stillbirths and contribute to the spread of vector-borne diseases like malaria and dengue fever, which adversely affect maternal and neonatal outcomes. Women often face limited access to healthcare facilities, making them more susceptible to injuries and decreasing their overall survival rates. During climate-related disasters, their access to health services is further restricted, jeopardizing their livelihoods and well-being.
+                  The intersection of gender equality and climate change significantly impacts women&apos;s health, particularly in low and lower-middle-income countries. Climate change exacerbates existing health risks, such as increased maternal and child health issues. Research indicates that rising temperatures can lead to higher rates of stillbirths and contribute to the spread of vector-borne diseases like malaria and dengue fever, which adversely affect maternal and neonatal outcomes. Women often face limited access to healthcare facilities, making them more susceptible to injuries and decreasing their overall survival rates. During climate-related disasters, their access to health services is further restricted, jeopardizing their livelihoods and well-being.
                   </p>
                   <p className="reveal-text">
-                  Moreover, the environmental changes caused by climate change create a vicious cycle of vulnerability for women and girls. With inadequate access to information, resources, and training, they are less prepared to respond to health crises or disasters. This disparity is particularly evident among marginalized groups, such as Afro-descendent women, who often receive less training and support. As a result, the ongoing climate crisis not only threatens women's immediate health but also perpetuates intergenerational cycles of poor health and reduced quality of life for future generations. Addressing these challenges is crucial for promoting gender equality and improving health outcomes in the face of climate change.
+                  Moreover, the environmental changes caused by climate change create a vicious cycle of vulnerability for women and girls. With inadequate access to information, resources, and training, they are less prepared to respond to health crises or disasters. This disparity is particularly evident among marginalized groups, such as Afro-descendent women, who often receive less training and support. As a result, the ongoing climate crisis not only threatens women&apos;s immediate health but also perpetuates intergenerational cycles of poor health and reduced quality of life for future generations. Addressing these challenges is crucial for promoting gender equality and improving health outcomes in the face of climate change.
                   </p>
                   <br />
                   <p className="text-[#4a235a]  reveal-text text-md">
@@ -525,7 +525,7 @@ export default function Home() {
               </p>
 
               <p className="reveal-text text-xl">
-              Offering training sessions for women in rural areas on sustainable agricultural practices, resource management, and climate adaptation strategies, prioritizing reproductive health services, including family planning and maternal care, and providing financial support for girls' education, focusing on STEM subjects to equip them with skills relevant to climate science and sustainability.
+              Offering training sessions for women in rural areas on sustainable agricultural practices, resource management, and climate adaptation strategies, prioritizing reproductive health services, including family planning and maternal care, and providing financial support for girls&apos; education, focusing on STEM subjects to equip them with skills relevant to climate science and sustainability.
               </p>
 
               </div>
@@ -543,7 +543,7 @@ export default function Home() {
                   Climate change and gender equality are closely linked, particularly in developing countries where women face disproportionate impacts. Due to their roles in agriculture, water collection, and household care, women are more vulnerable to climate-related events like droughts and floods. For instance, in Sub-Saharan Africa, women produce 60-80% of food but often lack equal access to resources and land rights, exacerbating food insecurity. This vulnerability is further compounded by increased workloads and limited decision-making power, leading to economic disparities and heightened health risks, especially in low-income communities.
                   </p>
                   <p className="mt-4  leading-relaxed reveal-text">
-                  Empowering women is crucial for enhancing resilience to climate change. Education plays a vital role, as educated women are more likely to adopt sustainable practices and contribute effectively to climate solutions. Policies that prioritize gender-responsive climate financing, improve access to resources, and promote women's leadership in decision-making can drive positive outcomes. By integrating gender equality into climate action, we not only empower women but also strengthen community resilience, paving the way for sustainable development and a more equitable future.
+                  Empowering women is crucial for enhancing resilience to climate change. Education plays a vital role, as educated women are more likely to adopt sustainable practices and contribute effectively to climate solutions. Policies that prioritize gender-responsive climate financing, improve access to resources, and promote women&apos;s leadership in decision-making can drive positive outcomes. By integrating gender equality into climate action, we not only empower women but also strengthen community resilience, paving the way for sustainable development and a more equitable future.
                   </p>
                   <br />
                   <p className="text-[#4a235a]  reveal-text text-md">
@@ -566,7 +566,7 @@ export default function Home() {
                   Practical Solutions
                 </p>
                 <p className="reveal-text text-xl">
-                Offering training sessions for women in rural areas on sustainable agricultural practices, resource management, and climate adaptation strategies, prioritizing reproductive health services, including family planning and maternal care, and providing financial support for girls' education, focusing on STEM subjects to equip them with skills relevant to climate science and sustainability.                </p>
+                Offering training sessions for women in rural areas on sustainable agricultural practices, resource management, and climate adaptation strategies, prioritizing reproductive health services, including family planning and maternal care, and providing financial support for girls&apos; education, focusing on STEM subjects to equip them with skills relevant to climate science and sustainability.                </p>
               </div>
 
               </div>
