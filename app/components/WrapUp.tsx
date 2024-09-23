@@ -193,7 +193,7 @@ export default function WrapUp() {
           </div>
           <Image
             id="serv-card-2"
-            priority
+            
             src={climateProb}
             alt="Climate Action"
             width={600}
@@ -206,7 +206,7 @@ export default function WrapUp() {
         <div className="grid gap-12 md:grid-cols-2 items-center">
           <Image
             id="serv-card-3"
-            priority
+            
             src={genderEq}
             alt="Gender Equality"
             width={600}
@@ -253,7 +253,7 @@ export default function WrapUp() {
           </div>
           <Image
             id="serv-card-6"
-            priority
+            
             src={technology}
             alt="Innovation & Technology"
             width={600}
@@ -266,7 +266,7 @@ export default function WrapUp() {
         <div className="grid gap-12 md:grid-cols-2 items-center pb-[10vh]">
           <Image
             id="serv-card-7"
-            priority
+            
             src={education}
             alt="Education & Awareness"
             width={600}
