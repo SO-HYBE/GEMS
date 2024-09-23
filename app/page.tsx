@@ -474,10 +474,10 @@ export default function Home() {
                     <Image
                       src={hishamPic}
                       alt="girl struggling in a flood"
-                      layout="fill"
+                      fill={true}
                       sizes="100%"
-                      className="hisham-pic"
-                      objectFit="cover"
+                      className="hisham-pic object-cover"
+            
                     />
                   </div>
                 </div>
@@ -509,10 +509,10 @@ export default function Home() {
                       <Image
                         src={shahdPic}
                         alt="Various natural disasters"
-                        layout="fill"
+                        fill={true}
                         sizes="100%"
-                        className="shahd-pic"
-                        objectFit="cover"
+                        className="shahd-pic object-cover"
+              
                       />
                     </div>
                   </div>
@@ -583,7 +583,7 @@ export default function Home() {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                   <div className="space-y-6 text-[#276749]">
-                    <p className="reveal-text">
+                    <p className="reveal-text text-lg">
                       The intersection of gender equality and climate change
                       significantly impacts women&apos;s health, particularly in
                       low and lower-middle-income countries. Climate change
@@ -599,7 +599,7 @@ export default function Home() {
                       access to health services is further restricted,
                       jeopardizing their livelihoods and well-being.
                     </p>
-                    <p className="reveal-text">
+                    <p className="reveal-text text-lg">
                       Moreover, the environmental changes caused by climate
                       change create a vicious cycle of vulnerability for women
                       and girls. With inadequate access to information,
@@ -632,10 +632,10 @@ export default function Home() {
                     <Image
                       src={mariamPic}
                       alt="Pesticides applied by a farmer"
-                      layout="fill"
-                      objectFit="cover"
+                      fill={true}
+            
                       sizes="100%"
-                      className="rounded-xl mariam-pic"
+                      className="rounded-xl mariam-pic object-cover"
                     />
                   </div>
                 </div>
@@ -695,16 +695,15 @@ export default function Home() {
                       resilience, paving the way for sustainable development and
                       a more equitable future.
                     </p>
-                    <p className="mt-4 text-md reveal-text">
+                    <p className="text-[#4a235a]  reveal-text text-md">
                       Resources:{" "}
                       <a
-                        className="text-sky-400 hover:underline reveal-text"
-                        href="https://arabstates.unwomen.org/en/stories/explainer/2022/03/explainer-how-gender-inequality-and-climate-change-are-interconnected"
+                        className="text-sky-400 after:content-['_↗'] ..."
+                        href=" https://arabstates.unwomen.org/en/stories/explainer/2022/03/explainer-how-gender-inequality-and-climate-change-are-interconnected"
                         target="_blank"
-                        rel="noopener noreferrer"
                       >
                         How Gender Inequality And Climate Change Are
-                        Interconnected ↗
+                        Interconnected
                       </a>
                     </p>
                   </div>
@@ -713,9 +712,9 @@ export default function Home() {
                     <Image
                       src={omniaPic}
                       alt="Global Mean Surface Temperature (GISS)"
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-lg shadow-xl omnia-pic"
+                      fill={true}
+            
+                      className="rounded-lg shadow-xl omnia-pic object-cover"
                     />
                   </div>
 
