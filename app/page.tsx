@@ -348,7 +348,7 @@ export default function Home() {
                 width={190}
                 height={190}
                 sizes="100%"
-                className="h-auto w-[60%]"
+                className="h-auto w-[90%] md:w-[60%]"
                 priority />
             </a>
           </div>
@@ -365,21 +365,21 @@ export default function Home() {
               <div className="lg:w-1/2 w-[60vw] flex justify-center lg:justify-end illustration-container ">
                 <div className="parallax-container w-full h-[80vh] bg-cover ">
                   <Image
-                    className=" overflow-visible parallax-img img1 z-[-10]"
+                    className=" overflow-visible parallax-img img1 z-[-10] h-auto w-full"
                     fill
                     priority
                     sizes="100%"
                     src={bgCircle}
                     alt="Image 1" />
                   <Image
-                    className=" overflow-visible parallax-img img2 z-[10]"
+                    className=" overflow-visible parallax-img img2 z-[10] h-auto w-full"
                     fill
                     priority
                     sizes="100%"
                     src={woman}
                     alt="Image 2" />
                   <Image
-                    className=" overflow-visible parallax-img img3 z-[15]"
+                    className=" overflow-visible parallax-img img3 z-[15] h-auto w-full"
                     fill
                     priority
                     sizes="100%"
