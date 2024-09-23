@@ -362,24 +362,24 @@ export default function Home() {
                   When gender equality thrives, so does the planet—unleashing the full potential of humanity to combat the climate crisis
                 </p>
               </div>
-              <div className="lg:w-1/2 w-[60vw] flex justify-center lg:justify-end illustration-container ">
+              <div className="lg:w-1/2 w-screen flex justify-center lg:justify-end illustration-container ">
                 <div className="parallax-container w-full h-[80vh] bg-cover ">
                   <Image
-                    className=" overflow-visible parallax-img img1 z-[-10] h-auto w-screen"
+                    className=" overflow-visible parallax-img img1 z-[-10]"
                     fill
                     priority
                     sizes="100%"
                     src={bgCircle}
                     alt="Image 1" />
                   <Image
-                    className=" overflow-visible parallax-img img2 z-[10] h-auto w-screen"
+                    className=" overflow-visible parallax-img img2 z-[10]"
                     fill
                     priority
                     sizes="100%"
                     src={woman}
                     alt="Image 2" />
                   <Image
-                    className=" overflow-visible parallax-img img3 z-[15] h-auto w-screen"
+                    className=" overflow-visible parallax-img img3 z-[15]"
                     fill
                     priority
                     sizes="100%"
