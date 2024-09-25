@@ -204,9 +204,9 @@ export default function Home() {
             scrollTrigger: {
               trigger: char,
               start: "top 95%",
-              end: "25% 5%",
+              end: "65% 5%",
               scrub: false,
-              toggleActions: "play pause resume pause",
+              toggleActions: "play pause resume pause"
             },
             opacity: 0.2,
             stagger: 0.0075,
@@ -599,7 +599,7 @@ export default function Home() {
                       access to health services is further restricted,
                       jeopardizing their livelihoods and well-being.
                     </p>
-                    <p className="reveal-text text-lg">
+                    <p className="reveal-text text-lg[">
                       Moreover, the environmental changes caused by climate
                       change create a vicious cycle of vulnerability for women
                       and girls. With inadequate access to information,
@@ -695,15 +695,15 @@ export default function Home() {
                       resilience, paving the way for sustainable development and
                       a more equitable future.
                     </p>
+                    <br />
                     <p className="text-[#4a235a]  reveal-text text-md">
                       Resources:{" "}
                       <a
                         className="text-sky-400 after:content-['_↗'] ..."
-                        href=" https://arabstates.unwomen.org/en/stories/explainer/2022/03/explainer-how-gender-inequality-and-climate-change-are-interconnected"
+                        href=" https://www.oecd.org/en/topics/sub-issues/gender-equality-and-environment.html"
                         target="_blank"
                       >
-                        How Gender Inequality And Climate Change Are
-                        Interconnected
+                        Gender equality and environment
                       </a>
                     </p>
                   </div>
