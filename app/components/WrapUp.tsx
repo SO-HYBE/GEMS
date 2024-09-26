@@ -250,6 +250,9 @@ export default function WrapUp() {
               that highlight the gender-climate nexus, enabling policymakers to
               create equitable climate action plans.
             </p>
+            <p className="md:text-xl/relaxed font-poppins text-[#4caf50]">
+              Using Telehealth, technology can reach women affected by the climate crisis. 
+            </p>
           </div>
           <Image
             id="serv-card-6"

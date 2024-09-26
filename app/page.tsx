@@ -27,23 +27,19 @@ export default function Home() {
     if (typeof window !== "undefined") {
       const ctx = gsap.context(() => {
         //--------------------------------------------------------------------------- INTERACTIVE PICTURE FUNCTIONALITY -------------------------
-        // Selecting the container and images
         const container = document.querySelector(".parallax-container");
         const images = document.querySelectorAll(".parallax-img");
 
-        // Mouse move event listener on the container
         (container as HTMLElement).addEventListener("mousemove", (e) => {
           const { width, height, left, top } = (
             container as HTMLElement
           ).getBoundingClientRect();
-          const mouseX = e.clientX - left; // Mouse X relative to container
-          const mouseY = e.clientY - top; // Mouse Y relative to container
+          const mouseX = e.clientX - left;
+          const mouseY = e.clientY - top; 
 
-          // Calculate rotation values
-          const rotateX = (mouseY / height) * 40 - 20; // Y-axis: -15 to 15 degrees
-          const rotateY = (mouseX / width) * 40 - 20; // X-axis: -20 to 20 degrees
+          const rotateX = (mouseY / height) * 40 - 20;
+          const rotateY = (mouseX / width) * 40 - 20; 
 
-          // Apply rotation to each image
           images.forEach((img, index) => {
             const depth = index * 10;
             gsap.to(img, {
