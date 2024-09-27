@@ -597,7 +597,7 @@ export default function Home() {
                       access to health services is further restricted,
                       jeopardizing their livelihoods and well-being.
                     </p>
-                    <p className="reveal-text text-lg[">
+                    <p className="reveal-text text-lg">
                       Moreover, the environmental changes caused by climate
                       change create a vicious cycle of vulnerability for women
                       and girls. With inadequate access to information,
