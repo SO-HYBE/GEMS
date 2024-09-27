@@ -116,7 +116,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="w-full text-[#e0e0e0] shadow-2xl contact-section">
+    <div className="w-full text-[#e0e0e0] shadow-2xl contact-section" ref={ref}>
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-4">
