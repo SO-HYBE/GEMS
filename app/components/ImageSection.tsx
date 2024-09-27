@@ -4,17 +4,18 @@ import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
 import hero from '../../public/hero.webp'
 import useIsomorphicLayoutEffect from 'use-isomorphic-layout-effect';
-gsap.registerPlugin(ScrollTrigger);
 
 export default function ImageSection(){
-
-  //------------------ Hero content animation -----------------
-    const ref  = useRef(null);
     
+    //------------------ Hero content animation -----------------
+    const ref  = useRef(null);
+    gsap.registerPlugin(ScrollTrigger);
+    
+
     useIsomorphicLayoutEffect(() => {
-      const ctx = gsap.context();
-      window.requestAnimationFrame(function() {
-      ctx.add(() => {
+        if (typeof window !== "undefined") {
+          const ctx = gsap.context(() => {
+
         const tl : GSAPTimeline = gsap.timeline({defaults: {duration:1, ease: 'power3.in'}});
         tl.to(".overlay", {y: "-100%", duration: 1.2, ease: "power4.inOut",
             scrollTrigger: {
@@ -58,16 +59,16 @@ export default function ImageSection(){
                 tl1.to('.marquee-3', {duration:1,delay:0.5, ease: "power4.out",autoAlpha:1, visibility:"visisble"})
                 
 
-    });
-    });
-      return () => ctx.revert();
-    }, []);
+            }, ref);
 
+            return () => ctx.revert();
+          }
+        }, []);
 
     return (
 
-      <><section className="hero-section">
-        <div className="hero h-[115vh] overflow-hidden pb-[50vh]" ref={ref}>
+      <div ref={ref}><section className="hero-section" >
+        <div className="hero h-[115vh] overflow-hidden pb-[50vh]">
           <div className="hero-content absolute z-10 h-[95vh] w-screen top-0 left-0 flex items-end text-white px-[4vw]">
             <div className="span-container flex flex-col font-poppins leading-[1.2] pb-2 text-white">
               <div className="upper-span flex flex-row gap-5">
@@ -136,6 +137,6 @@ export default function ImageSection(){
             </div>
           </div>
         </div>
-      </section></>
+      </section></div>
     );
 }

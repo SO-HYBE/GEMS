@@ -8,60 +8,58 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
 import useIsomorphicLayoutEffect from "use-isomorphic-layout-effect";
-gsap.registerPlugin(ScrollTrigger);
 
 export default function ContactForm() {
-  const ref = useRef(null);
 
-  useEffect(() => {
-    const formElement = document.getElementById("custom-google-form") as HTMLFormElement | null;
+    useEffect(() => {
+        const formElement = document.getElementById("custom-google-form") as HTMLFormElement | null;
 
-    if (formElement) {
-      const handleSubmit = (e: Event) => {
-        e.preventDefault();
-
-        const formData = new FormData(formElement);
-        const formParams = new URLSearchParams();
-
-        for (const [key, value] of formData.entries()) {
-          formParams.append(key, value.toString());
+        if (formElement) {
+          const handleSubmit = (e: Event) => {
+            e.preventDefault();
+    
+            const formData = new FormData(formElement);
+            const formParams = new URLSearchParams();
+    
+            for (const [key, value] of formData.entries()) {
+              formParams.append(key, value.toString());
+            }
+    
+            fetch(
+              "https://docs.google.com/forms/d/e/1FAIpQLSf1MM04NEJrGI7gMIg6xCd10zRMOFzQRs8w2d4wz43njtHTvQ/formResponse",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: formParams.toString(),
+                mode: 'no-cors'
+              }
+            )
+              .then(() => {
+                console.log("Form submission successful");
+              })
+              .catch((error) => {
+                console.error("Error submitting form:", error);
+              });
+          };
+    
+          // Add the submit event listener
+          formElement.addEventListener("submit", handleSubmit);
+    
+          // Cleanup: Remove the event listener when the component unmounts
+          return () => {
+            (formElement as HTMLElement).removeEventListener("submit", handleSubmit);
+          };
         }
+    }, [])
 
-        fetch(
-          "https://docs.google.com/forms/d/e/1FAIpQLSf1MM04NEJrGI7gMIg6xCd10zRMOFzQRs8w2d4wz43njtHTvQ/formResponse",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-            },
-            body: formParams.toString(),
-            mode: 'no-cors'
-          }
-        )
-          .then(() => {
-            console.log("Form submission successful");
-          })
-          .catch((error) => {
-            console.error("Error submitting form:", error);
-          });
-      };
+    const ref = useRef(null);
+    gsap.registerPlugin(ScrollTrigger);
 
-      // Add the submit event listener
-      formElement.addEventListener("submit", handleSubmit);
-
-      // Cleanup: Remove the event listener when the component unmounts
-      return () => {
-        formElement.removeEventListener("submit", handleSubmit);
-      };
-    }
-  }, []); // Empty dependency array to run effect only once on mount
-
-
-  useIsomorphicLayoutEffect(() => {
-
-    const ctx = gsap.context();
-    window.requestAnimationFrame(function () {
-      ctx.add(() => {
+    useIsomorphicLayoutEffect(() => {
+        if (typeof window !== "undefined") {
+          const ctx = gsap.context(() => {
         const tlContact: GSAPTimeline = gsap.timeline({
           scrollTrigger: {
             trigger: ".contact-section",
@@ -88,10 +86,12 @@ export default function ContactForm() {
           .to(".contact-text", {
             color: "#333333",
           },"<");
-      });
-    });
-    return () => ctx.revert();
-  }, []);
+        }, ref);
+
+        return () => ctx.revert();
+      }
+
+    }, []);
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -116,7 +116,8 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="w-full text-[#e0e0e0] shadow-2xl contact-section" ref={ref}>
+    <div ref={ref}>
+    <div className="w-full text-[#e0e0e0] shadow-2xl contact-section">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-4">
@@ -190,6 +191,7 @@ export default function ContactForm() {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 }

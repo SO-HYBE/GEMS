@@ -711,6 +711,7 @@ export default function Home() {
                       src={omniaPic}
                       alt="Global Mean Surface Temperature (GISS)"
                       fill={true}
+                      sizes="100%"
             
                       className="rounded-lg shadow-xl omnia-pic object-cover"
                     />
