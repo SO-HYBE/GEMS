@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import contactImg from "../../public/contact-img.png";
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
@@ -62,7 +62,7 @@ export default function ContactForm() {
     const ctx = gsap.context(ref);
     window.requestAnimationFrame(function () {
       ctx.add(() => {
-        var tlContact: GSAPTimeline = gsap.timeline({
+        const tlContact: GSAPTimeline = gsap.timeline({
           scrollTrigger: {
             trigger: ".contact-section",
             start: "-30% 30%",
@@ -124,8 +124,8 @@ export default function ContactForm() {
               Questions & Suggestions
             </h2>
             <p className="text-lg text-[#333333]/90 text-pretty main-contact-text">
-              We'd love to hear from you! Whether you have a question about our
-              solutions or want to share a suggestion, please don't hesitate to
+              We&apos;d love to hear from you! Whether you have a question about our
+              solutions or want to share a suggestion, please don&apos;t hesitate to
               reach out!
             </p>
             <Image

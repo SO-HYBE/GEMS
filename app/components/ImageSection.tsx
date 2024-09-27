@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { Ref, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
@@ -9,13 +9,13 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ImageSection(){
 
   //------------------ Hero content animation -----------------
-    const ref  : any= useRef();
+    const ref  = useRef(null);
     
     useIsomorphicLayoutEffect(() => {
-      const ctx = gsap.context(ref);
+      const ctx = gsap.context();
       window.requestAnimationFrame(function() {
       ctx.add(() => {
-        var tl : GSAPTimeline = gsap.timeline({defaults: {duration:1, ease: 'power3.in'}});
+        const tl : GSAPTimeline = gsap.timeline({defaults: {duration:1, ease: 'power3.in'}});
         tl.to(".overlay", {y: "-100%", duration: 1.2, ease: "power4.inOut",
             scrollTrigger: {
             trigger: ".hero-section",
@@ -32,7 +32,7 @@ export default function ImageSection(){
               }
         });
 
-                var tl1 : GSAPTimeline = gsap.timeline({
+                const tl1 : GSAPTimeline = gsap.timeline({
                   scrollTrigger: {
                     trigger: '.hero',
                     pin: true,
