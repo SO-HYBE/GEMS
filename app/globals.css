@@ -132,3 +132,227 @@ body {
 .reveal-text {
   font-kerning: none;
 }
+
+/* ---------------------------------------------------------- Image section css ---------------------------------------------------------- */ 
+
+.span-1{
+  font-size: clamp(2rem, 0.8571rem + 4.7143vw, 10rem);
+}
+.span-2{
+  font-size: clamp(2rem, 0.8571rem + 4.7143vw, 10rem);
+}
+.span-3{
+  font-size: clamp(4rem, 1.7143rem + 9.4286vw, 20rem);
+}
+
+.bg-vid{
+  visibility: hidden;
+}
+/*------------------- Marquee styling -----------------*/
+
+.marq{
+  visibility:hidden;
+  transform: translate(0,1000px)
+}
+
+.marquee {
+  display: flex;
+  position: absolute;
+  width: 110%;
+  z-index: -90;
+  overflow: hidden;
+  height: 10vh;
+  user-select: none;
+  gap: 0em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transform: rotate(-5deg) translateY(-200px) translateX(-5px);
+}
+
+.marquee-3 {
+  display: flex;
+  position: absolute;
+  width: 110%;
+  z-index: -90;
+  overflow: hidden;
+  height: 10vh;
+  user-select: none;
+  gap: 0em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transform: rotate(-5deg) translateY(-25px) translateX(-5px);
+}
+
+.marquee-2 {
+  display: flex;
+  position: absolute;
+  width: 110%;
+  z-index: -90;
+  overflow: hidden;
+  height: 13vh;
+  user-select: none;
+  gap: 0em;
+  padding-top: 1rem;
+  background-color: #6c3483;
+  padding-bottom: 1rem;
+  transform: rotate(-5deg) translateY(-125px) translateX(-5px);
+  -webkit-text-stroke: 1.5px white;
+  text-shadow: 1.5px white;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: all 0.5s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.marquee:hover {
+  -webkit-text-stroke: 1.5px #6c3483;
+    text-shadow: 1.5px #6c3483;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: all 0.5s ease;
+    -webkit-font-smoothing: antialiased;
+    /*-moz-osx-font-smoothing: grayscale;*/
+
+}
+.marquee-2:hover {
+  -webkit-text-stroke: initial;
+    text-shadow:initial;
+    -webkit-text-fill-color: initial;
+    color: initial;
+    transition: all 0.5s ease;
+    -webkit-font-smoothing: antialiased;
+    /*-moz-osx-font-smoothing: grayscale;*/
+
+}
+.marquee-3:hover {
+  -webkit-text-stroke: 1.5px #6c3483;
+    text-shadow: 1.5px #6c3483;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: all 0.5s ease;
+    -webkit-font-smoothing: antialiased;
+    /*-moz-osx-font-smoothing: grayscale;*/
+
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0em;
+  min-width: 100%;
+  animation: scroll 15s linear infinite reverse;
+}
+
+.marquee__group-2 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0em;
+  min-width: 100%;
+  animation: scroll 15s linear infinite;
+}
+
+.marquee__group span {
+  color: #4caf50;
+  font-size: 2.5em;
+  font-weight: 800;
+  white-space: nowrap;
+  font-family: var(--font-poppins), sans-serif !important;
+  /*text-transform: uppercase;*/
+  
+}
+
+.marquee__group2 span {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 800;
+  white-space: nowrap;
+  font-family: var(--font-poppins), sans-serif !important;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 0em));
+  }
+}
+
+/*------------------- Media Queries -------------------*/
+
+@media (max-width: 425px) {
+  .sm-dev {
+      display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .md-dev {
+      display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .marquee__group span {
+      color: #4caf50;
+      font-size: 5vw;    
+    }
+    .marquee__group2 span {
+      color: white;
+      font-size: 5vw;
+    }
+}
+
+@media (min-width: 1200px){
+  .upper-span{
+      margin-bottom: -15px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .marquee{
+      transform: rotate(-5deg) translateY(-220px) translateX(-5px);
+  }   
+  .marquee-3{
+      transform: rotate(-5deg) translateY(0) translateX(-5px);
+  }   
+}
+
+
+
+/* ---------------------------------------------------------- Image section css ---------------------------------------------------------- */ 
+
+
+/* ---------------------------------------------------------- Scroll bar styling ---------------------------------------------------------- */ 
+/* Hide the default scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fffefc;
+}
+
+/* Style the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background: #4caf50;
+  border-radius: 4px;
+}
+
+/* Style the scrollbar thumb when inactive (not being hovered) */
+body::-webkit-scrollbar-thumb:vertical {
+  transition: background 0.2s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #55b158;
+}
+
+/* ---------------------------------------------------------- Scroll bar styling ---------------------------------------------------------- */ 

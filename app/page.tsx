@@ -18,6 +18,8 @@ import hishamPic from "../public/hisham-pic.jpg";
 import shahdPic from "../public/shahd-pic.jpg";
 import mariamPic from "../public/mariam-pic.jpg";
 import omniaPic from "../public/omnia-pic.jpg";
+import ImageSection from "./components/ImageSection";
+import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   const elementsRef = useRef(null);
@@ -547,7 +549,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-12  text-[#4a235a]">
-                  <p className="text-3xl text-[#276749] font-bold ">
+                  <p className="text-3xl text-[#276749] font-bold">
                     Practical Solutions
                   </p>
                   <p className="reveal-text text-xl">
@@ -736,6 +738,10 @@ export default function Home() {
         </div>
 
         <WrapUp />
+
+        <ImageSection />
+
+        <ContactForm />
       </div>
       <Footer />
     </>
