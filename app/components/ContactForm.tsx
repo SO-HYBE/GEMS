@@ -11,7 +11,7 @@ import useIsomorphicLayoutEffect from "use-isomorphic-layout-effect";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ContactForm() {
-  const ref: any = useRef();
+  const ref = useRef(null);
 
   useEffect(() => {
     const formElement = document.getElementById("custom-google-form") as HTMLFormElement | null;
@@ -59,7 +59,7 @@ export default function ContactForm() {
 
   useIsomorphicLayoutEffect(() => {
 
-    const ctx = gsap.context(ref);
+    const ctx = gsap.context();
     window.requestAnimationFrame(function () {
       ctx.add(() => {
         const tlContact: GSAPTimeline = gsap.timeline({
