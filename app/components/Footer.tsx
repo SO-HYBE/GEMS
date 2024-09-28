@@ -1,6 +1,5 @@
 import Image from "next/image";
 import logo from "../../public/GEMS-logo-v.png";
-import phoneSvg from "../../public/phone-svgrepo-com.svg";
 
 export default function Footer() {
   return (
@@ -38,6 +37,7 @@ export default function Footer() {
           <a
             href="tel:+201272857888"
             className="text-[#6c3483] hover:text-[#e0c6f5] duration-200"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,11 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/gemswomen/" className="text-[#6c3483] hover:text-[#e0c6f5] duration-200">
+          <a
+            href="https://www.instagram.com/gemswomen/"
+            className="text-[#6c3483] hover:text-[#e0c6f5] duration-200"
+            target="_blank"
+          >
             <svg
               className="w-6 h-6"
               fill="currentColor"
@@ -66,7 +70,11 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="mailto:gems.10162628@gmail.com" className="text-[#6c3483] hover:text-[#e0c6f5] duration-200">
+          <a
+            href="mailto:gems.10162628@gmail.com"
+            className="text-[#6c3483] hover:text-[#e0c6f5] duration-200"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6"
