@@ -43,7 +43,7 @@ export default function Home() {
           const rotateY = (mouseX / width) * 40 - 20; 
 
           images.forEach((img, index) => {
-            const depth = index * 10;
+            const depth = index * 12;
             gsap.to(img, {
               rotationX: rotateX + depth,
               rotationY: rotateY + depth,
@@ -429,31 +429,17 @@ export default function Home() {
             <section className="w-full py-12 md:py-24 lg:py-32 bg-white intro-section">
               <div className="px-4 md:px-6">
                 <h2 className="headline-text text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-[#4a235a] md:leading-relaxed">
-                  Empowering Women for Climate Resilience: Addressing Gender
-                  Disparities in a Changing World
+                  Amplifying Women's Voices in Climate Action
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-[#276749]">
                   <div className="md:col-span-2 space-y-4">
                     <p className="text-[#276749] reveal-text text-lg">
-                      Climate change disproportionately affects women,
-                      particularly in developing countries, where they often
-                      bear the brunt of climate-related events due to their
-                      roles in agriculture, water collection, and household
-                      care. The UNDP reports that 80% of people displaced by
-                      climate change are women. Empowering women through
-                      education and leadership can enhance resilience to climate
-                      change, as educated women are more likely to adopt
-                      sustainable practices and contribute to better
-                      environmental governance. Conversely, climate change
-                      exacerbates economic and health disparities, forcing women
-                      into increased unpaid labor and heightening health risks
-                      from climate-induced diseases. Effective policy solutions
-                      must integrate gender-responsive approaches, ensuring
-                      women have access to resources, decision-making roles, and
-                      climate finance that prioritizes gender equality.
-                      Addressing these interconnected issues is essential for
-                      building resilient communities and promoting
-                      sustainable development.
+                      Women make up the majority of the world&apos;s poor population. They tend to suffer more from the impacts of climate-related disasters and severe weather events due to regional cultural norms and unfair distribution of roles, resources, and power, especially in developing countries. Their role in combating climate change is seldom appreciated even though they give priority to their families even in the times of droughts and scarcity of food and water resources.
+                    </p>
+                    <p className="text-[#276749] reveal-text text-lg">
+                      In rural and marginalized communities, women bear the brunt of climate change, often managing essential resources like water and food. Yet, they face barriers such as limited access to education, financial resources, and land rights. Empowering women with leadership roles and equitable resources is key, as gender-equal communities are more resilient to climate impacts and better at adopting sustainable practices.</p>
+                    <p className="text-[#276749] reveal-text text-lg">
+                      Women&apos;s concerns about climate change are widespread, but their voices often remain underrepresented in decision-making processes.
                     </p>
                     <br />
                     <br />
@@ -485,9 +471,7 @@ export default function Home() {
                   </p>
 
                   <p className="reveal-text text-xl">
-                    Implement a Gender-Responsive Climate Resilience Framework
-                    that integrates gender equality into climate change
-                    adaptation and mitigation strategies.
+                  To address this, a website can be developed to gather large-scale data on women's opinions and insights about climate change, process it using AI and unsupervised machine learning, and present the results in a format that informs global climate action.
                   </p>
                 </div>
               </div>
@@ -535,7 +519,7 @@ export default function Home() {
                       harmful practices.
                     </p>
                     <br />
-                    <p className="text-[#4a235a]  reveal-text text-md">
+                    <p className="text-[#4a235a] reveal-text text-lg">
                       Resources:{" "}
                       <a
                         className="text-sky-400 after:content-['_↗'] ..."
@@ -614,7 +598,7 @@ export default function Home() {
                       change.
                     </p>
                     <br />
-                    <p className="text-[#4a235a]  reveal-text text-md">
+                    <p className="text-[#4a235a]  reveal-text text-lg">
                       Resources:{" "}
                       <a
                         className="text-sky-400 after:content-['_↗'] ..."
@@ -666,7 +650,7 @@ export default function Home() {
 
                 <div className="space-y-8 md:space-y-12 text-[#4a235a]">
                   <div className="mx-auto">
-                    <p className="md:text-base leading-relaxed reveal-text text-lg">
+                    <p className="leading-relaxed reveal-text text-lg">
                       Climate change and gender equality are closely linked,
                       particularly in developing countries where women face
                       disproportionate impacts. Due to their roles in
@@ -680,7 +664,7 @@ export default function Home() {
                       leading to economic disparities and heightened health
                       risks, especially in low-income communities.
                     </p>
-                    <p className="mt-4 text-lg md:text-base leading-relaxed reveal-text">
+                    <p className="mt-4 text-lg leading-relaxed reveal-text">
                       Empowering women is crucial for enhancing resilience to
                       climate change. Education plays a vital role, as educated
                       women are more likely to adopt sustainable practices and
@@ -694,7 +678,7 @@ export default function Home() {
                       a more equitable future.
                     </p>
                     <br />
-                    <p className="text-[#4a235a]  reveal-text text-md">
+                    <p className="text-[#4a235a]  reveal-text text-lg">
                       Resources:{" "}
                       <a
                         className="text-sky-400 after:content-['_↗'] ..."
